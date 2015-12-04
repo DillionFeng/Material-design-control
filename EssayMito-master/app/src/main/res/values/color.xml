@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="toolbar_background">#477FFF</color>
+    <color name="tab_bg_color">#eee</color>
+
+    <color name="tab_text_color">#777</color>
+    <color name="tab_text_select_color">#477FFF</color>
+    <color name="white">@android:color/white</color>
+</resources>

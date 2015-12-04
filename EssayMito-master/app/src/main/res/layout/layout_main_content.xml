@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <include layout="@layout/layout_toolbar" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tab_bg_color"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/tab_text_select_color"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="@color/tab_text_select_color"
+            app:tabTextColor="@color/tab_text_color" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--可滑动的布局内容-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <include layout="@layout/layout_fab" />
+
+</android.support.design.widget.CoordinatorLayout>
